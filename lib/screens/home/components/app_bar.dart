@@ -22,44 +22,52 @@ class CustomAppBar extends StatelessWidget {
           ),
         ],
       ),
-      child: Row(
-        children: <Widget>[
-          Image.asset(
-            "assets/images/logo.png",
-            height: 25,
-            alignment: Alignment.topCenter,
-          ),
-          const SizedBox(width: 5),
-          Text(
-            "Foodi".toUpperCase(),
-            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-          ),
-          const Spacer(),
-          MenuItem(
-            title: "Home",
-            press: () {},
-          ),
-          MenuItem(
-            title: "About",
-            press: () {},
-          ),
-          MenuItem(
-            title: "Pricing",
-            press: () {},
-          ),
-          MenuItem(
-            title: "Contact",
-            press: () {},
-          ),
-          MenuItem(
-            title: "Login",
-            press: () {},
-          ),
-          DefaultButton(
-            text: "Get Started",
-            press: () {},
-          ),
-        ],
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: <Widget>[
+            Image.asset(
+              "assets/images/logo.png",
+              height: 25,
+              alignment: Alignment.topCenter,
+            ),
+            const SizedBox(width: 5),
+            Text(
+              "Foodi".toUpperCase(),
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(width: 20),
+            MenuItem(
+              title: "Home",
+              press: () {},
+            ),
+            const SizedBox(width: 20),
+            MenuItem(
+              title: "About",
+              press: () {},
+            ),
+            const SizedBox(width: 20),
+            MenuItem(
+              title: "Pricing",
+              press: () {},
+            ),
+            const SizedBox(width: 20),
+            MenuItem(
+              title: "Contact",
+              press: () {},
+            ),
+            const SizedBox(width: 20),
+            MenuItem(
+              title: "Login",
+              press: () {},
+            ),
+            const SizedBox(width: 20),
+            DefaultButton(
+              text: "Get Started",
+              press: () {},
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -12,7 +12,6 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         height: size.height,
-        // it will take full width
         width: size.width,
         decoration: const BoxDecoration(
           image: DecorationImage(
@@ -20,18 +19,15 @@ class HomeScreen extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: const Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            CustomAppBar(),
-            Spacer(),
-            // It will cover 1/3 of free spaces
-            Body(),
-            Spacer(
-              flex: 2,
-            ),
-            // it will cover 2/3 of free spaces
-          ],
+        child: const SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              CustomAppBar(),
+              SizedBox(height: 8), // Add some spacing between AppBar and Body
+              Body(),
+            ],
+          ),
         ),
       ),
     );
