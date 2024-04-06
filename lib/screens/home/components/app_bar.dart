@@ -9,8 +9,8 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(20),
-      padding: const EdgeInsets.all(20),
+      margin: const EdgeInsets.all(15),
+      padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(46),
@@ -31,37 +31,37 @@ class CustomAppBar extends StatelessWidget {
               height: 25,
               alignment: Alignment.topCenter,
             ),
-            const SizedBox(width: 5),
+            const SizedBox(width: 10),
             Text(
               "Foodi".toUpperCase(),
-              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(width: 20),
+            const SizedBox(width: 13),
             MenuItem(
               title: "Home",
               press: () {},
             ),
-            const SizedBox(width: 20),
+            const SizedBox(width: 13),
             MenuItem(
               title: "About",
               press: () {},
             ),
-            const SizedBox(width: 20),
+            const SizedBox(width: 13),
             MenuItem(
               title: "Pricing",
               press: () {},
             ),
-            const SizedBox(width: 20),
+            const SizedBox(width: 13),
             MenuItem(
               title: "Contact",
               press: () {},
             ),
-            const SizedBox(width: 20),
+            const SizedBox(width: 13),
             MenuItem(
               title: "Login",
               press: () {},
             ),
-            const SizedBox(width: 20),
+            const SizedBox(width: 13),
             DefaultButton(
               text: "Get Started",
               press: () {},

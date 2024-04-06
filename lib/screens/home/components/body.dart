@@ -28,7 +28,7 @@ class Body extends StatelessWidget {
           FittedBox(
             // Now it just take the required spaces
             child: Container(
-              margin: const EdgeInsets.symmetric(vertical: 20),
+              margin: const EdgeInsets.symmetric(vertical: 30),
               padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
                 color: const Color(0xFF372930),

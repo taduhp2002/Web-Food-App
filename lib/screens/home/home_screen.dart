@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               CustomAppBar(),
-              SizedBox(height: 8), // Add some spacing between AppBar and Body
+              SizedBox(height: 25), // Add some spacing between AppBar and Body
               Body(),
             ],
           ),
